@@ -1,0 +1,35 @@
+PartI - Multiple Choice
+1-5 BEDCA
+6-10 ECBDE
+11-15 BCBEE
+16-20 ABADD
+
+PartI
+Question 1
+public class ComplexNumber
+{  
+   public ComplexNumber(int a,int b)
+   {this.a=a;
+    this.b=b;}
+   public ComplexNumber add(ComplexNumber cNum)
+   {return new ComplexNumber(a+cNum.getA(),b+cNum.getB());}
+   public ComplexNumber multiply(ComplexNumber cNum)
+   {return new ComplexNumber(a*cNum.getA()+b*cNum.getB(),a*cNum.getB()+b*cNum.getA());}
+   public int getA()
+   {return a;}
+   public int getB()
+   {return b;}
+
+Question 2
+part(a)
+public CoinCollectionTools(String country, int rows, int columns)
+{super(Coin(country，0，0));
+ Coin[][] coinBox= new[columns][rows]；}
+
+part(b)
+public Coin[][] fillCoinBox(ArrayList<Coin> myCoins)
+    for(int r=0;r<coinBox[0].length;r++){
+
+
+part(c)
+public ArrayList<Coin> fillCoinTypeList()
