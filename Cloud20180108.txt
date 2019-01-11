@@ -31,9 +31,44 @@ public CoinCollectionTools(String country, int rows, int columns)
  }
 
 part(b)
-public Coin[][] fillCoinBox(ArrayList<Coin> myCoins)
-    for(int r=0;r<coinBox[0].length;r++){
-
-
+public Coin[][] fillCoinBox(ArrayList<Coin> myCoins){
+int time=0;
+    for(int r=0;r<coinBox[0].length;r++)
+       {for(int c=0;c<cionBox.length;c++)
+            {if(time<=myCoins.size())
+                {coinBox[r][c]= myCoins.get(time);
+                time++;}
+              else
+                 return coinbox;
+             }
+        }  
+ }
 part(c)
-public ArrayList<Coin> fillCoinTypeList()
+public ArrayList<Coin> fillCoinTypeList(){
+ArrayList<coin> a= new ArrayList<coin>();
+ for(int r=0;r<coinBox[0].length;r++)
+       {for(int c=0;c<cionBox.length;c++)
+            {a.add(coinBox[r][c]);}
+        }
+        
+ for(int m=0; m<a.size();m++)
+    {int index=m;
+     int min=a.get(m).getCoinType();
+    {for(int n=m+1;n<a.size();n++)
+        {if(a.get(n).getCoinType()<min)
+           {min=a.get(n).getCoinType();
+            index=n;}
+        }
+        }
+     Coin temp=a.get(m);
+     a.set(m,a.get(index));
+     a.set(index,temp);
+     }
+ 
+ return a;
+ }
+ 
+ 
+            
+            
+            
