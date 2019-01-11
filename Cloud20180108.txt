@@ -23,8 +23,12 @@ public class ComplexNumber
 Question 2
 part(a)
 public CoinCollectionTools(String country, int rows, int columns)
-{super(Coin(country，0，0));
- Coin[][] coinBox= new[columns][rows]；}
+{coinBox= new Coin [rows][columns]；
+ for(int r=0;r<rows;r++)
+     {for(int c=0;c<columns;c++)
+          {coinBox[r][c]= new Coin(country,0,0);}
+      }
+ }
 
 part(b)
 public Coin[][] fillCoinBox(ArrayList<Coin> myCoins)
